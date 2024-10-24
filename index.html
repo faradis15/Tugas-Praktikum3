@@ -18,7 +18,7 @@
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+            border: 1px solid #dccece;
             box-sizing: border-box;
         }
 
@@ -35,7 +35,7 @@
 
         .close {
             background-color: red;
-            color: white;
+            color: rgb(216, 207, 207);
             border: none;
             padding: 5px 10px;
             cursor: pointer;
@@ -44,7 +44,7 @@
 
         .edit {
             background-color: blue;
-            color: white;
+            color: rgb(149, 114, 114);
             border: none;
             padding: 5px 10px;
             cursor: pointer;
@@ -56,7 +56,7 @@
         }
 
         .edit:hover {
-            background-color: darkblue;
+            background-color: rgb(40, 40, 95);
         }
 
         table {
@@ -66,23 +66,26 @@
 
         th, td {
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #ab5b5b;
             text-align: center;
         }
 
         th {
-            background-color: #f4f4f4;
+            background-color: #b37676;
         }
     </style>
 </head>
 <body>
+    <button id="ubahWarna">Change Color</button>
+    <input type="range" id="ubahUkuranFont" min="10" max="40" value="16">
+    <button id="ubahMode">Dark Mode</button>
+    <button id="ubahGayaFont">Change Font</button>
 
     <div class="container">
         <h2>My To-Do List</h2>
         <input type="text" id="newTask" placeholder="Add a new task...">
-        <button id="addButton" style="background-color: green; color: white;">Add</button>
+        <button id="addButton" style="background-color: rgb(98, 138, 98); color: rgb(226, 209, 209);">Add</button>
 
-        <!-- Tabel untuk header Task dan Actions -->
         <table>
             <thead>
                 <tr>
@@ -91,7 +94,6 @@
                 </tr>
             </thead>
             <tbody id="taskList">
-                <!-- Task items will be added here dynamically -->
             </tbody>
         </table>
     </div>
